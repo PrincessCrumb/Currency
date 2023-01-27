@@ -34,7 +34,7 @@ public class CurrencyController {
 
     @GetMapping(value = "/currency/{name}")
     CurrencyDto getCurrency(@PathVariable("name") String name) {
-        return currencies.get(name.toLowerCase());
+        return currencies.get(name.toLowerCase());//все правильно
     }
 }
 
